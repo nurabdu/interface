@@ -1,0 +1,12 @@
+.maincontent{
+  display: flex;
+  grid-template-columns: 310px 1fr;
+  background-color: #193147;
+  height: 100vh;
+}
+
+.content{
+  width: 60%;
+  height: 600px;
+  border: solid;
+}
