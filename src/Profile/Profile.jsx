@@ -3,11 +3,14 @@ import styled from 'styled-components';
 
 const ProfileStyle = styled.div`
 `;
-const Profile = () => {
+const Profile = (props) => {
     return (
         <ProfileStyle>
             <div>
-                Porfile
+                <div>
+                    <img src='' />
+                </div>
+                <div><span>{props.name}</span><span>{props.surname}</span></div>
             </div>
         </ProfileStyle>
     )
