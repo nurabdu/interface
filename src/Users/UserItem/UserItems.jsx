@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from './../../Images/holiday.jpg';
+//import Icon from './../../Images/holiday.jpg';
 
 const ItemStyle = styled.div`
 display: grid;
@@ -26,7 +26,6 @@ margin-top: 0.1rem;
 const UserItems = (props) => {
     return (
         <ItemStyle>
-            <img className='img' src={Icon}/>
             <div className='userdata'>
                 <h3>{props.surname}</h3>
                 <h3>{props.name}</h3>
