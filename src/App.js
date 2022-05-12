@@ -9,14 +9,6 @@ import Users from './Users/Users';
 import Settings from './Settings/Settings';
 //import ClassComponent from './classComponent/ClassComponent';
 
-
-const users = [
-  {name: "sveta", surname: "sokolova"},
-  {name: "vanya", surname: "ptashkin"},
-  {name: "masha", surname: "koshkin"},
-  {name: "uyra", surname: "ushkin"},
-  {name: "ilya", surname: "soshkin"}
-]
 function App(props) {
   return (<>
     <Header />
@@ -35,7 +27,7 @@ function App(props) {
           <Route 
               path="/users" 
               element={
-               <Users name={users[0].name} surname={users[0].surname}/>}
+               <Users usersData={props.state.usersPage.users}/>}
                />
           <Route path="/settings" element={<Settings />} />
         </Routes>

@@ -1,14 +1,13 @@
 import React from 'react';
-//import UserItems from './UserItem/UserItems';
-// {/* <div>users</div>
-//      {usersElement} */}
+import UserItems from './UserItem/UserItems';
+
 const  Users = (props) => {
 
-  // let usersElement = props.usersData.map((u) =>  <UserItems surname={u.surname} name={u.name}/>)
+ let userElement = props.usersData.map((u)=> <UserItems name={u.name} surname={u.surname}/>)
 
   return (
     <>
-   {props.name} {props.surname}
+      {userElement}
     </>
   )
 }
