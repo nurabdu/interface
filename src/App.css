@@ -1,13 +1,14 @@
 .maincontent{
   display: flex;
   grid-template-columns: 310px 1fr;
-  background-color: #193147;
+  background-color: #fff8dc69;
   height: 100vh;
 }
 
 .content{
   width: 60%;
   height: auto;
-  border: solid;
-  background-color:  #e8eeee;
+  border-left: ridge;
+  border-right-style: ridge;
+  background-color:  #fbfbfbc2;
 }

@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavItemStyle = styled.div`
+    color: wheat;
     width: 310px;
     height: 40px;
     margin-bottom: 3px;
-    background: #1d2e47;
+    border-radius 1rem;
+    background: #2a9689;
     display: grid;
     justify-content: center;
     align-items: center;

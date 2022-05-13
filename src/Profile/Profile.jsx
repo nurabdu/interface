@@ -11,7 +11,6 @@ const Profile = (props) => {
             <div>
                 <div>
                 </div>
-                <div><h1>Profile</h1><span>{props.name}</span><span>{props.surname}</span></div>
             </div>
         </ProfileStyle>
     )
