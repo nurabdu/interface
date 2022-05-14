@@ -1,13 +1,41 @@
 import React from 'react';
 import UserItems from './UserItem/UserItems';
+import Message from '../Dialog/Message/Message';
+import styled from 'styled-components';
 
-const  Users = (props) => {
+const Archive = styled.div`
+display: grid;
+grid-template-columns: 30% 1fr;
 
- let userElement = props.usersData.map((u)=> <UserItems name={u.name} surname={u.surname}/>)
+.messagesArchive{
+  border-left: ridge;
+  width: auto;
+  height: auto;
+  background-color: wheat;
+}
+
+.users{
+  width: 240px;
+}
+`;
+
+
+const Users = (props) => {
+
+  let userElement = props.usersData.map((u) => <UserItems name={u.name} surname={u.surname} />)
 
   return (
     <>
-      {userElement}
+      <Archive>
+        <div className='users'>
+          {userElement}
+        </div>
+        <div className='messagesArchive'>
+          <Message
+            dialogPage={props.dialogPage}
+            AddMessage={props.AddMessage} />
+        </div>
+      </Archive>
     </>
   )
 }

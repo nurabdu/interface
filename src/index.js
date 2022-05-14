@@ -6,15 +6,17 @@ import App from './App';
 //import *as serviceWorker from './serviceWorker'
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
+import {AddMessage} from './redux/state';
+
+
+//  AddMessage('meassasda');
 
 ReactDOM.render(
-  
     <BrowserRouter>
       <App state={state}
-        />
+       AddMessage={AddMessage}/>
     </BrowserRouter>
-,
-  document.getElementById('root')
+,document.getElementById('root')
 );
 //<React.StrictMode></React.StrictMode>
 // If you want to start measuring performance in your app, pass a function

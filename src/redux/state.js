@@ -28,4 +28,14 @@ let state = {
             ]
     }
 }
+
+export let AddMessage = (dialogPage) =>{
+
+    let newMessage = {
+        id: 7,
+        message: dialogPage
+    };
+    state.dialogPage.dialogs.push(newMessage);
+};
+
 export default state;

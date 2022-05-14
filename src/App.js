@@ -27,7 +27,10 @@ function App(props) {
           <Route 
               path="/users" 
               element={
-               <Users usersData={props.state.usersPage.users}/>}
+               <Users
+                usersData={props.state.usersPage.users}
+                dialogPage={props.state.dialogPage.dialogs}
+                AddMessage={props.AddMessage}/>}
                />
           <Route path="/settings" element={<Settings />} />
         </Routes>

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
- const Messages = () => {
+ const Messages = (props) => {
   return (
-    <div>Messages</div>
+    <div>{props.id}{props.messages}</div>
   )
 }
 export default Messages;
