@@ -1,23 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import App from './App';
-//import *as serviceWorker from './serviceWorker'
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
-import {AddMessage} from './redux/state';
+import { rerenderEntireTree } from './render';
 
+rerenderEntireTree(state);
 
-//  AddMessage('meassasda');
-
-ReactDOM.render(
-    <BrowserRouter>
-      <App state={state}
-       AddMessage={AddMessage}/>
-    </BrowserRouter>
-,document.getElementById('root')
-);
 //<React.StrictMode></React.StrictMode>
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

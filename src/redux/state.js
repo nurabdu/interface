@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../render";
+
 let state = {
     usersData: {
      users:[
@@ -36,6 +38,7 @@ export let AddMessage = (dialogPage) =>{
         message: dialogPage
     };
     state.dialogPage.dialogs.push(newMessage);
+    rerenderEntireTree(state);
 };
 
 export default state;
