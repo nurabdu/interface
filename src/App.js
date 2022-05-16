@@ -30,7 +30,9 @@ function App(props) {
                <Users
                 usersData={props.state.usersPage.users}
                 dialogPage={props.state.dialogPage.dialogs}
-                AddMessage={props.AddMessage}/>}
+                newMessageText={props.state.newMessageText.MessageText}
+                AddMessage={props.AddMessage}
+                updateAddMessage={props.updateAddMessage}/>}
                />
           <Route path="/settings" element={<Settings />} />
         </Routes>

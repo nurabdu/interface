@@ -33,7 +33,9 @@ const Users = (props) => {
         <div className='messagesArchive'>
           <Message
             dialogPage={props.dialogPage}
-            AddMessage={props.AddMessage} />
+            AddMessage={props.AddMessage} 
+            newMessageText={props.newMessageText}
+            updateAddMessage={props.updateAddMessage}/>
         </div>
       </Archive>
     </>
