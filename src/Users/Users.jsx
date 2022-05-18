@@ -22,7 +22,7 @@ grid-template-columns: 30% 1fr;
 
 const Users = (props) => {
 
-  let userElement = props.usersData.map((u) => <UserItems name={u.name} surname={u.surname} />)
+  let userElement = props.usersData.map((u) => <UserItems key={u} name={u.name} surname={u.surname} />)
 
   return (
     <>

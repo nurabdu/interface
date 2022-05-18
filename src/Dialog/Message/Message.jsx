@@ -21,7 +21,7 @@ function Message(props) {
         let text = message.current.value;
         props.updateAddMessage(text);
     };
-    let messageElement = props.dialogPage.map((message) => <Messages id={message.id} messages={message.message} />)
+    let messageElement = props.dialogPage.map((message) => <Messages key={message} id={message.id} messages={message.message} />)
     return (<>
         <MessageStyle>
             <div>
